@@ -41,11 +41,9 @@ def scan_directory(root_directory):
             try:
                 file_hash = calculate_hash(full_path)
                 hashes[relative_path] = file_hash
-
             except (PermissionError, OSError) as error:
                 print(f"Не удалось прочитать файл: {relative_path}")
                 print(f"Причина: {error}")
-
     return hashes
 
 
@@ -86,8 +84,6 @@ def check_integrity(old_hashes, new_hashes):
 
 
 def print_results(added, deleted, changed):
-    print("\n========== РЕЗУЛЬТАТ ПРОВЕРКИ ==========\n")
-
     if not added and not deleted and not changed:
         print("Изменений не обнаружено.")
         print("Целостность каталога не нарушена.")
