@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-from stego_common import RU_TO_EN, EN_TO_RU, bytes_to_bits
+from tasks.task2.stego_common import RU_TO_EN, EN_TO_RU, bytes_to_bits
 
 
 SECRET_ENCODING = "cp1251"

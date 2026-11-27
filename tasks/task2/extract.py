@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-from stego_common import (
+from tasks.task2.stego_common import (
     RU_TO_EN,
     EN_TO_RU,
     bits_to_bytes,
